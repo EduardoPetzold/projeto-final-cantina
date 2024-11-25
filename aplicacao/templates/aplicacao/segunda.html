@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre a refeição de segunda-feira com pizza e sanduíche de queijo, alface e tomate.">
+    <title>Segunda-feira - Menu</title>
+    <link rel="stylesheet" href="{% static './aplicacao/segunda.css'%}">
+</head>
+
+<body>
+
+    <!-- Imagem de fundo -->
+    <figure class="background-image-wrapper">
+        <img src="https://images7.alphacoders.com/596/596343.jpg" alt="Paisagem com céu azul e montanhas ao fundo" class="background-image">
+    </figure>
+
+    <main>
+        <!-- Seção de conteúdo do menu -->
+        <section class="menu-content">
+            <header class="menu-header">
+                <img src="{% static './aplicacao/img/czs.png'%}" alt="Imagem de uma cozinheira profissional" class="cozinheira">
+                <h2>Segunda-feira</h2>
+                <h3>Pizza</h3>
+            </header>
+            <div class="menu-description">
+                <p class="lanche">Lanche Especial</p>
+                <p class="descricao">Descrição: Um delicioso sanduíche de queijo com alface e tomate, perfeito para a refeição da segunda-feira.</p>
+            </div>
+        </section>
+
+        <!-- Botão de voltar ao menu -->
+        <a class="voltar-menu" href="../index.html" title="Voltar ao menu principal">Voltar ao Menu</a>
+    </main>
+
+</body>
+
+</html>
