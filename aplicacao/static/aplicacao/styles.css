@@ -1,14 +1,140 @@
-body {
+/* Resetando margens e padding para garantir consistência */
+* {
     margin: 0;
-    background-color: rgb(202, 202, 202);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: rgb(0, 110, 255);
-    font-size: 100px;
+/* Estilização do Body */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilização do Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo à esquerda */
+    background-color: #3498db; /* Cor azul clara para o topo */
+    padding: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    max-width: 100px; /* Logo menor */
+}
+
+header .logo-wr {
+    flex-grow: 1;
+    text-align: center; /* Centraliza o texto */
+}
+
+header .logo-wr h1, header .logo-wr h2 {
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Estilização do Main */
+.main-content {
+    flex: 1;
+    background-color: white;
+}
+
+.logo-telas {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-top {
+    background-image: url('../design/assets/logo-cozi.png');
+}
+
+.logo-bottom {
+    background-image: url('../design/assets/logo-garfo.webp');
+}
+
+/* Estilização da seção de botões */
+.dias {
+    background-color: white; /* Fundo branco para o centro */
+    padding: 40px;
+    color: #333; /* Cor de texto escura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    height: 100%;
+}
+
+.dias h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Botões com fundo azul */
+.botao-semana {
+    width: 100%; /* A largura do botão vai ocupar toda a largura do container */
+    max-width: 300px; /* Limita o tamanho máximo do botão */
+}
+
+.link-botao {
+    display: block; /* Transformando o link em um bloco para ocupar toda a largura disponível */
+    background-color: #3498db; /* Botões com fundo azul */
+    color: white; /* Texto branco nos botões */
+    padding: 14px 0;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center; /* Alinhando o texto ao centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #3498db; /* Bordas coloridas */
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+.link-botao:hover {
+    background-color: #2980b9; /* Fundo azul mais escuro no hover */
+    color: white; /* Texto branco no hover */
+    transform: translateY(-5px);
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #3498db; /* Cor azul clara para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Estilização para Responsividade */
+@media (max-width: 768px) {
+    .dias {
+        padding: 20px;
+    }
+
+    .link-botao {
+        font-size: 1em;
+        padding: 12px 0;
+    }
+
+    header .logo-wr h1 {
+        font-size: 1.5em;
+    }
+
+    header .logo-wr h2 {
+        font-size: 1.1em;
+    }
 }
