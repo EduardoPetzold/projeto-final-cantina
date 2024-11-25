@@ -1,13 +1,52 @@
-{% load static %}
+{%load static%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'aplicacao/styles.css' %}">
+    <title>Menu da Semana</title>
+    <link rel="stylesheet" href="{% static './aplicacao/styles.css'%}">
 </head>
+
 <body>
-    <h1>Jovem e Tecnologia</h1>
+    <header>
+        <img src="{% static './aplicacao/img/logo-wr.png'%}" alt="logo" class="logo">
+
+        <div class="logo-wr">
+            <h1>Escola Professor Willy Roos</h1>
+            <h2>Cardápio Escolar</h2>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        
+        <section class="dias">
+            <h2>Selecione um Dia:</h2>
+            <div class="botao-semana">
+                <a href="./semanas/segunda.html" class="link-botao">Segunda-feira</a>
+            </div>
+            <div class="botao-semana">
+                <a href="./semanas/terca.html" class="link-botao">Terça-feira</a>
+            </div>
+            <div class="botao-semana">
+                <a href="./semanas/quarta.html" class="link-botao">Quarta-feira</a>
+            </div>
+            <div class="botao-semana">
+                <a href="./semanas/quinta.html" class="link-botao">Quinta-feira</a>
+            </div>
+            <div class="botao-semana">
+                <a href="./semanas/sexta.html" class="link-botao">Sexta-feira</a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>2024 Escola Professor Willy Roos.</p>
+        <p>terceirao302_wr</p>
+        <p>By 302-WR</p>
+    </footer>
 </body>
+
 </html>
