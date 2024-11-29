@@ -8,7 +8,7 @@ from aplicacao.views import index, semana
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('2', semana),
+    path('<str:semana>', semana),
 ]
 
 
