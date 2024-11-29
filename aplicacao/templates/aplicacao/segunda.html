@@ -22,17 +22,17 @@
         <section class="menu-content">
             <header class="menu-header">
                 <img src="{% static './aplicacao/img/czs.png'%}" alt="Imagem de uma cozinheira profissional" class="cozinheira">
-                <h2>Segunda-feira</h2>
-                <h3>Pizza</h3>
+                <h2>{{semana}}</h2>
+                <h3>{{nome}}</h3>
             </header>
             <div class="menu-description">
-                <p class="lanche">Lanche Especial</p>
-                <p class="descricao">Descrição: Um delicioso sanduíche de queijo com alface e tomate, perfeito para a refeição da segunda-feira.</p>
+                <p class="descricao">Descrição: {{descricao}}</p>
+                <p class="lanche">Bom Apetite!</p>
             </div>
         </section>
 
         <!-- Botão de voltar ao menu -->
-        <a class="voltar-menu" href="../index.html" title="Voltar ao menu principal">Voltar ao Menu</a>
+        <a class="voltar-menu" href="/" title="Voltar ao menu principal">Voltar ao Menu</a>
     </main>
 
 </body>
